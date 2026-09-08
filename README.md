@@ -1,10 +1,10 @@
-MEMBUAT CV
+TUGAS MEMBUAT CV
 
 Muhammad Rafe'i
 
 - Tugas Kuliah
 
-- Mata Kuliah Pemrograman Web,
+- Mata Kuliah Pemrograman Web
 
 - Prodi Bisnis Digital
 
