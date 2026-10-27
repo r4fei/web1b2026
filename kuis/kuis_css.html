@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="kuis.css">
+    <style>
+
+        body {
+            background-color: #F5B027;
+        }
+
+        th {
+            background-color: #438D80;
+            color: #FFFFFF;
+            font-family: Helvetica;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            color: #000001
+        }
+
+        tr {
+            text-align: center;
+            color: rgb(83, 78, 78)
+        }
+
+        table {
+            background-color: white;
+            margin: auto auto;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        
+        th,td {
+            border: 1px solid;
+            padding: 8px;
+            border-color: black;
+        }
+
+        th {
+            background-color: #F54927;
+            color: white;
+            
+        }
+
+        .total {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .TotalHarga {
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
     <p><b>Nama:</b> Muhammad Rafe'i</p>
     <p><b>NIM:</b> E030426038</p>
 
-<hr>
-<h3 align="center">Daftar Harga Layanan</h3>
- <div class="container">
-     <table border="1" cellpadding="8" cellspacing="0">
-      <tr bgcolor="#F4F7F6" align="center">
-          <th>No</th>
-          <th>Paket Layanan</th>
-          <th>Kategori</th>
-          <th>Harga</th>
+    <hr>
+
+    <h3>Daftar Harga Layanan</h3>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Paket Layanan</th>
+            <th>Kategori</th>
+            <th>Harga</th>
         </tr>
-        </div>
-<tr align="center">
+        <tr>
             <td>1</td>
             <td>Landing Page UMKM</td>
             <td>Web Development</td>
             <td>Rp 1.500.000</td>
         </tr>
 
-        <tr align="center">
+        <tr>
             <td>2</td>
             <td>Logo & Branding</td>
             <td>Graphic Design</td>
             <td>Rp 500.000</td>
         </tr>
 
-        <tr align="center">
+        <tr>
             <td>3</td>
             <td>Website Bisnis Full</td>
             <td>Web Development</td>
             <td>Rp 3.500.000</td>
         </tr>
 
-       <tr align="center">
-            <td colspan="3" align="right"><b>Total Biaya</b></td>
-            <td><b>Rp 5.500.000</b></td>
+        <tr>
+            <td colspan="3" class="total">Total Biaya</td>
+            <td class="TotalHarga">Rp 5.500.000</td>
         </tr>
-        
+
     </table>
 </body>
+
 </html>
