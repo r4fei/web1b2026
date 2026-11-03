@@ -1,0 +1,368 @@
+
+/* =========================================
+   GLOBAL STYLE
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fc;
+    color: #263247;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================================
+   HEADER & NAVIGATION
+========================================= */
+header {
+    background: linear-gradient(135deg, #008080);
+    color: white;
+    text-align: center;
+    padding: 45px 0 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+    color: #dceaff;
+    margin-bottom: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: #e4efff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+nav a.active {
+    background-color: white;
+    color: #008080;
+    font-weight: 700;
+}
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+main {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #102a56;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: #78859a;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   CARD GRID
+========================================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* =========================================
+   CARD
+========================================= */
+.card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e8edf5;
+    box-shadow: 0 5px 20px rgba(25, 55, 100, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(25, 55, 100, 0.12);
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 13px;
+    color: #78859a;
+    line-height: 1.8;
+}
+
+/* =========================================
+   VIDEO CONTAINER
+========================================= */
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #008080;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* =========================================
+   PRICING CARD
+========================================= */
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e8f2ff;
+    color: #008080;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 13px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.badge-featured {
+    background-color: #fff0d5;
+    color: #d58a00;
+}
+
+.card-price {
+    font-size: 25px;
+    font-weight: 800;
+    color: #008080;
+    margin: 8px 0 20px;
+}
+
+.card-features {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.card-features li {
+    font-size: 13px;
+    color: #65748b;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.card-features li::before {
+    content: "✓";
+    color: #16a36a;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* =========================================
+   FEATURED CARD
+========================================= */
+.pricing-card.featured {
+    border: 2px solid #008080;
+    box-shadow: 0 10px 30px rgba(23, 105, 170, 0.12);
+    transform: scale(1.03);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.03) translateY(-7px);
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #008080);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: auto;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg,#008080);
+    box-shadow: 0 5px 15px rgba(23, 105, 170, 0.25);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+    background-color: #008080;
+    color: #cbd8eb;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-7px);
+    }
+}
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    header {
+        padding: 35px 0 28px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .section {
+        padding: 25px 0;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-img {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-price {
+        font-size: 23px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 18px 10px;
+    }
+}
